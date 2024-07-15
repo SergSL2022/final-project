@@ -1,1 +1,37 @@
 # final-project
+
+## 1. Create GitHub/GitLab repo with
+#### - test python backend server. Just script which listening on some port and respond 200 on /
+#### - Dockerfile with everything needed to run this script
+#### - GitHub actions or GitLab CI which will build docker image automatically and push to docker hub. Use Github secrets or Gitlab variables to store your docker hub creds
+
+
+## 2. Write terraform code to create EKS cluster
+#### - use code from lection_scripts/lesson-20240620/EKS
+#### - one node group with one node
+#### - nginx ingress controller
+
+
+## 3. Write terraform code which will install Cert manager, Sealed Secrets, ArgoCD to EKS using helm chart
+#### - add certificate cluster issuer to EKS using kubernetes provider and kubernetes_manifest resource
+#### -if you have own DNS domain, then argocd should use your dns name when expose over ingress
+#### - generate SSL certificiate for the used DNS name and optionally use HTTPS
+#### - each helm release should use own namespace
+
+## 4. Write helm chart with manifests to deploy your app from item 1 to EKS
+#### - deployment, service, ingress
+#### - create separate namespace for your app
+
+
+## 5. Write ArgoCD app which will install the sealed secret with dockerhub connection details to namespace of your app
+#### Connect ArgoCD to your git repo with HTTPS and login/password (deploy token)
+#### You need to generate sealed secret
+#### Add and commit it to git
+#### Use this git in app to add YAML manifests to kube
+
+
+## 6. Write ArgoCD app which will deploy python app helm chart from item 4 to EKS
+#### - It should use values file from repo
+#### - This file should include usage of this unsealed secret for dockerhub auth
+#### - When new image is built and pushed to docherhub, this values file should be changed in git to use new tag and ArgoCD will deploy a new version
+#### - app must be publically available by DNS name and optionally SSL

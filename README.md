@@ -4,6 +4,21 @@
 #### - test python backend server. Just script which listening on some port and respond 200 on /
 #### - Dockerfile with everything needed to run this script
 #### - GitHub actions or GitLab CI which will build docker image automatically and push to docker hub. Use Github secrets or Gitlab variables to store your docker hub creds
+![alt text](<screenshots/1/Знімок екрана з 2024-07-16 02-19-42.png>)
+![alt text](<screenshots/1/Знімок екрана з 2024-07-16 02-20-28.png>)
+![alt text](<screenshots/1/Знімок екрана з 2024-07-16 02-20-54.png>)
+![alt text](<screenshots/1/Знімок екрана з 2024-07-16 02-23-53.png>)
+![alt text](<screenshots/1/Знімок екрана з 2024-07-16 02-26-28.png>)
+![alt text](<screenshots/1/Знімок екрана з 2024-07-16 02-37-55.png>)
+![alt text](<screenshots/1/Знімок екрана з 2024-07-16 02-38-11.png>)
+![alt text](<screenshots/1/Знімок екрана з 2024-07-16 02-39-29.png>)
+![alt text](<screenshots/1/Знімок екрана з 2024-07-16 02-45-19.png>)
+![alt text](<screenshots/1/Знімок екрана з 2024-07-16 02-45-34.png>)
+![alt text](<screenshots/1/Знімок екрана з 2024-07-17 00-50-40.png>)
+![alt text](<screenshots/1/Знімок екрана з 2024-07-17 00-50-51.png>)
+![alt text](<screenshots/1/Знімок екрана з 2024-07-17 00-53-01.png>)
+![alt text](<screenshots/1/Знімок екрана з 2024-07-17 00-53-50.png>)
+![alt text](<screenshots/1/Знімок екрана з 2024-07-17 00-54-23.png>)
 
 
 ## 2. Write terraform code to create EKS cluster

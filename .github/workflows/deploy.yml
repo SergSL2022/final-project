@@ -13,8 +13,6 @@ on:
       - main
 
 env:
-  REGISTRY_USER: ${{ secrets.DOCKERHUB_USER_NAME }}
-  REGISTRY_PASSWORD: ${{ secrets.DOCKERHUB_TOKEN }}
   IMAGE_NAME: serhiyslipchuk/slipchuk-python-app
   TAG: v.0.${{ github.run_number }}
 
@@ -30,7 +28,10 @@ jobs:
         uses: docker/setup-buildx-action@v1
 
       - name: Login to Docker Hub
-        run: echo "${{ secrets.DOCKERHUB_TOKEN }}" | docker login -u ${{ secrets.DOCKERHUB_USERNAME }} --password-stdin
+        env:
+          DOCKERHUB_USER_NAME: ${{ secrets.DOCKERHUB_USER_NAME }}
+          DOCKERHUB_TOKEN: ${{ secrets.DOCKERHUB_TOKEN }}
+        run: echo "DOCKERHUB_TOKEN" | docker login -u "DOCKERHUB_USER_NAME" --password-stdin
 
       - name: Build and push Docker image
         id: docker_build

@@ -25,6 +25,16 @@
 #### - use code from lection_scripts/lesson-20240620/EKS
 #### - one node group with one node
 #### - nginx ingress controller
+![alt text](<screenshots/2/Знімок екрана з 2024-07-17 15-23-59.png>)
+![alt text](<screenshots/2/Знімок екрана з 2024-07-17 15-24-11.png>)
+![alt text](<screenshots/2/Знімок екрана з 2024-07-17 15-16-46.png>)
+![alt text](<screenshots/2/Знімок екрана з 2024-07-17 15-18-32.png>)
+![alt text](<screenshots/2/Знімок екрана з 2024-07-17 15-22-18.png>)
+![alt text](<screenshots/2/Знімок екрана з 2024-07-17 15-22-37.png>)
+![alt text](<screenshots/2/Знімок екрана з 2024-07-17 15-24-51.png>)
+![alt text](<screenshots/2/Знімок екрана з 2024-07-17 15-25-12.png>)
+![alt text](<screenshots/2/Знімок екрана з 2024-07-17 15-26-10.png>)
+![alt text](<screenshots/2/Знімок екрана з 2024-07-17 15-27-41.png>)
 
 
 ## 3. Write terraform code which will install Cert manager, Sealed Secrets, ArgoCD to EKS using helm chart

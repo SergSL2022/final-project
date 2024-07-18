@@ -42,6 +42,20 @@
 #### -if you have own DNS domain, then argocd should use your dns name when expose over ingress
 #### - generate SSL certificiate for the used DNS name and optionally use HTTPS
 #### - each helm release should use own namespace
+![alt text](<screenshots/3/Знімок екрана з 2024-07-18 22-58-52.png>)
+![alt text](<screenshots/3/Знімок екрана з 2024-07-18 22-59-03.png>)
+![alt text](<screenshots/3/Знімок екрана з 2024-07-18 23-10-03.png>)
+![alt text](<screenshots/3/Знімок екрана з 2024-07-18 23-10-24.png>)
+![alt text](<screenshots/3/Знімок екрана з 2024-07-18 23-10-35.png>)
+![alt text](<screenshots/3/Знімок екрана з 2024-07-18 23-10-42.png>)
+![alt text](<screenshots/3/Знімок екрана з 2024-07-18 23-11-24.png>)
+![alt text](<screenshots/3/Знімок екрана з 2024-07-18 23-15-37.png>)
+![alt text](<screenshots/3/Знімок екрана з 2024-07-18 23-16-34.png>)
+![alt text](<screenshots/3/Знімок екрана з 2024-07-18 23-17-27.png>)
+![alt text](<screenshots/3/Знімок екрана з 2024-07-19 00-09-45.png>)
+![alt text](<screenshots/3/Знімок екрана з 2024-07-19 00-10-09.png>)
+![alt text](<screenshots/3/Знімок екрана з 2024-07-19 00-10-42.png>)
+
 
 ## 4. Write helm chart with manifests to deploy your app from item 1 to EKS
 #### - deployment, service, ingress

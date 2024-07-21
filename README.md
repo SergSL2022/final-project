@@ -60,6 +60,12 @@
 ## 4. Write helm chart with manifests to deploy your app from item 1 to EKS
 #### - deployment, service, ingress
 #### - create separate namespace for your app
+![alt text](<screenshots/4/Знімок екрана з 2024-07-21 04-20-27.png>)
+![alt text](<screenshots/4/Знімок екрана з 2024-07-21 04-20-50.png>)
+![alt text](<screenshots/4/Знімок екрана з 2024-07-21 04-21-02.png>)
+![alt text](<screenshots/4/Знімок екрана з 2024-07-21 04-21-15.png>)
+![alt text](<screenshots/4/Знімок екрана з 2024-07-21 04-21-26.png>)
+![alt text](<screenshots/4/Знімок екрана з 2024-07-21 04-21-39.png>)
 
 
 ## 5. Write ArgoCD app which will install the sealed secret with dockerhub connection details to namespace of your app

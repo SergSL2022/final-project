@@ -1,0 +1,23 @@
+namespace: python-api
+
+replicaCount: 2
+
+app:
+  name: slipchuk-python-api
+
+image:
+  repository: serhiyslipchuk/slipchuk-python-app
+  tag: v.0.5
+
+service:
+  type: ClusterIP
+  port: 80
+  targetPort: 5000
+
+ingress:
+  class: nginx
+  issuer: letsencrypt-prod
+  host: python-app.slipchuk.website
+
+env:
+  value: production

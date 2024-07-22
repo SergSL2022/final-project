@@ -1,3 +1,6 @@
+*.pem
+.dockerhubtoken
+
 #Terraform
 .terraform
 .terraform/*

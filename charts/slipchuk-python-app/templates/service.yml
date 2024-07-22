@@ -2,11 +2,11 @@ apiVersion: v1
 kind: Service
 metadata:
   name: {{ .Release.Name }}-service
-  namespace: {{ .Values.namespace }}
+  namespace: python-api
 spec:
-  type: {{ .Values.service.type }}
+  type: {{ .Values.service.type | default "ClusterIP" }}
   ports:
-    - port: {{ .Values.service.port }}
-      targetPort: {{ .Values.service.targetPort }}
+    - port: {{ .Values.service.port | default 80 }}
+      targetPort: {{ .Values.service.targetPort | default 5000 }}
   selector:
     app: {{ .Release.Name }}

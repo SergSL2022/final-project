@@ -1,0 +1,18 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: slipchuk-python-app
+  namespace: python-api
+spec:
+  project: default
+  source:
+    repoURL: 'https://github.com/SergSL2022/step-project-final.git'
+    targetRevision: HEAD
+    path: charts/slipchuk-python-app
+  destination:
+    server: 'https://kubernetes.default.svc'
+    namespace: python-api
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true

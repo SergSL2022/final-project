@@ -46,6 +46,5 @@ jobs:
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add argocd/python-api.values.yaml
           git commit -m "Update image tag to ${{ env.TAG }}"
-          git push
-        env:
-          GITHUB_TOKEN: ${{ secrets.PA_TOKEN }}
+          git remote set-url origin https://x-access-token:${{ secrets.PA_TOKEN }}@github.com/SergSL2022/step-project-final.git
+          git push origin HEAD:main

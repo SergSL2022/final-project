@@ -39,7 +39,7 @@ jobs:
           push: true
           tags: ${{ env.IMAGE_NAME }}:${{ env.TAG }}
 
-       - name: Install GitHub CLI
+      - name: Install GitHub CLI
         uses: actions/setup-node@v2
         with:
           node-version: '14'
@@ -59,3 +59,5 @@ jobs:
           git commit -m "Update image tag to ${{ env.TAG }}"
           git remote set-url origin https://github.com/${{ github.repository }}.git
           git push origin HEAD:main
+
+       

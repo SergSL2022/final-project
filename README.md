@@ -73,6 +73,12 @@
 #### You need to generate sealed secret
 #### Add and commit it to git
 #### Use this git in app to add YAML manifests to kube
+![alt text](<screenshots/5/Знімок екрана з 2024-07-22 04-29-48.png>)
+![alt text](<screenshots/5/Знімок екрана з 2024-07-22 04-29-59.png>)
+![alt text](<screenshots/5/Знімок екрана з 2024-07-22 04-31-42.png>)
+![alt text](<screenshots/5/Знімок екрана з 2024-07-22 04-34-07.png>)
+![alt text](<screenshots/5/Знімок екрана з 2024-07-22 04-35-30.png>)
+![alt text](<screenshots/5/Знімок екрана з 2024-07-22 04-35-42.png>)
 
 
 ## 6. Write ArgoCD app which will deploy python app helm chart from item 4 to EKS

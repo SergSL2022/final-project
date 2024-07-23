@@ -14,7 +14,7 @@ def root():
 def root():
     data = {
         'status': 200,
-        'message': 'OK. Test successful'
+        'message': 'Test successful'
     }
     return jsonify(data), 200, {'Content-Type': 'application/json'}
 

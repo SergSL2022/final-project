@@ -11,7 +11,7 @@ spec:
     path: charts/slipchuk-python-app
     helm:
       valueFiles:
-        - argocd/python-api.values.yaml
+        - ../../argocd/python-api.values.yaml
   destination:
     server: 'https://kubernetes.default.svc'
     namespace: python-api

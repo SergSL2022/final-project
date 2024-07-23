@@ -39,6 +39,12 @@ jobs:
           push: true
           tags: ${{ env.IMAGE_NAME }}:${{ env.TAG }}
 
+      - name: Install GitHub CLI
+        uses: actions/gh-cli@v1
+
+      - name: Authenticate with GitHub CLI
+        run: gh auth login --with-token <<< "${{ secrets.PA_TOKEN }}"
+
       - name: Update python-api.values.yaml with new image tag
         run: |
           sed -i "s/tag: .*/tag: ${{ env.TAG }}/" argocd/python-api.values.yaml
@@ -46,5 +52,5 @@ jobs:
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add argocd/python-api.values.yaml
           git commit -m "Update image tag to ${{ env.TAG }}"
-          git remote set-url origin https://x-access-token:${{ secrets.PA_TOKEN }}@github.com/SergSL2022/step-project-final.git
+          gh repo set-default SergSL2022/step-project-final
           git push origin HEAD:main

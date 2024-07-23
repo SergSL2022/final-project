@@ -80,6 +80,13 @@
 ![alt text](<screenshots/5/Знімок екрана з 2024-07-22 04-35-30.png>)
 ![alt text](<screenshots/5/Знімок екрана з 2024-07-22 04-35-42.png>)
 
+![alt text](<screenshots/5/Знімок екрана з 2024-07-21 23-52-29.png>)
+![alt text](<screenshots/5/Знімок екрана з 2024-07-22 00-00-34.png>)
+![alt text](<screenshots/5/Знімок екрана з 2024-07-22 00-06-14.png>)
+![alt text](<screenshots/5/Знімок екрана з 2024-07-22 04-46-51.png>)
+![alt text](<screenshots/5/Знімок екрана з 2024-07-22 04-50-21.png>)
+![alt text](<screenshots/5/Знімок екрана з 2024-07-22 04-50-45.png>)
+
 
 ## 6. Write ArgoCD app which will deploy python app helm chart from item 4 to EKS
 #### - It should use values file from repo

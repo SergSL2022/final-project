@@ -10,6 +10,14 @@ def root():
     }
     return jsonify(data), 200, {'Content-Type': 'application/json'}
 
+@app.route('/test')
+def root():
+    data = {
+        'status': 200,
+        'message': 'DanIT'
+    }
+    return jsonify(data), 200, {'Content-Type': 'application/json'}
+
 
 if __name__ == '__main__':
     app.run(debug=True)

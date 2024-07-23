@@ -9,6 +9,9 @@ spec:
     repoURL: 'https://github.com/SergSL2022/step-project-final.git'
     targetRevision: HEAD
     path: charts/slipchuk-python-app
+    helm:
+      valueFiles:
+        - argocd/python-api.values.yaml
   destination:
     server: 'https://kubernetes.default.svc'
     namespace: python-api

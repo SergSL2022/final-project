@@ -7,7 +7,6 @@ app:
 
 image:
   repository: serhiyslipchuk/slipchuk-python-app
-  tag: v.0.5
 
 service:
   type: ClusterIP

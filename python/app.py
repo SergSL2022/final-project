@@ -18,5 +18,14 @@ def test():
     }
     return jsonify(data), 200, {'Content-Type': 'application/json'}
 
+@app.route('/healthz')
+def healthz():
+    data = {
+        'status': 200,
+        'message': 'Healthz. Ok'
+    }
+    return jsonify(data), 200, {'Content-Type': 'application/json'}
+
+
 if __name__ == '__main__':
     app.run(debug=True)

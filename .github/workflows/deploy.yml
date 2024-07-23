@@ -38,7 +38,7 @@ jobs:
           file: ./Dockerfile
           push: true
           tags: ${{ env.IMAGE_NAME }}:${{ env.TAG }}
-          
+
       - name: Update python-api.values.yaml with new image tag
         run: |
           sed -i "s/tag: .*/tag: ${{ env.TAG }}/" argocd/python-api.values.yaml
@@ -48,4 +48,4 @@ jobs:
           git commit -m "Update image tag to ${{ env.TAG }}"
           git push
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.PA_TOKEN }}

@@ -11,7 +11,7 @@ def root():
     return jsonify(data), 200, {'Content-Type': 'application/json'}
 
 @app.route('/test')
-def root():
+def test():
     data = {
         'status': 200,
         'message': 'Ok. Test successful'

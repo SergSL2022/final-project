@@ -39,12 +39,13 @@ jobs:
           push: true
           tags: ${{ env.IMAGE_NAME }}:${{ env.TAG }}
 
+       - name: Install GitHub CLI
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+
       - name: Install GitHub CLI
-        run: |
-          sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-key C99B11DEB97541F0
-          echo "deb https://cli.github.com/packages stable main" | sudo tee /etc/apt/sources.list.d/github-cli.list
-          sudo apt update
-          sudo apt install gh -y
+        run: npm install -g @actions/github-script
 
       - name: Authenticate with GitHub CLI
         run: echo "${{ secrets.PA_TOKEN }}" | gh auth login --with-token
@@ -56,4 +57,5 @@ jobs:
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add argocd/python-api.values.yaml
           git commit -m "Update image tag to ${{ env.TAG }}"
+          git remote set-url origin https://github.com/${{ github.repository }}.git
           git push origin HEAD:main

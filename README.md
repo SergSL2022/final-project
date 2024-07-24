@@ -93,3 +93,20 @@
 #### - This file should include usage of this unsealed secret for dockerhub auth
 #### - When new image is built and pushed to docherhub, this values file should be changed in git to use new tag and ArgoCD will deploy a new version
 #### - app must be publically available by DNS name and optionally SSL
+![alt text](<screenshots/6/Знімок екрана з 2024-07-23 15-36-35.png>)
+![alt text](<screenshots/6/Знімок екрана з 2024-07-23 15-36-48.png>)
+![alt text](<screenshots/6/Знімок екрана з 2024-07-23 15-37-07.png>)
+![alt text](<screenshots/6/Знімок екрана з 2024-07-23 15-38-16.png>)
+![alt text](<screenshots/6/Знімок екрана з 2024-07-24 04-40-30.png>)
+![alt text](<screenshots/6/Знімок екрана з 2024-07-24 04-40-51.png>)
+![alt text](<screenshots/6/Знімок екрана з 2024-07-24 02-55-54.png>)
+![alt text](<screenshots/6/Знімок екрана з 2024-07-24 02-56-05.png>)
+![alt text](<screenshots/6/Знімок екрана з 2024-07-24 02-56-48.png>)
+![alt text](<screenshots/6/Знімок екрана з 2024-07-24 02-58-18.png>)
+![alt text](<screenshots/6/Знімок екрана з 2024-07-24 02-58-30.png>)
+![alt text](<screenshots/6/Знімок екрана з 2024-07-24 02-59-14.png>)
+
+
+
+
+

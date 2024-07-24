@@ -10,5 +10,13 @@ def root():
     }
     return jsonify(data), 200, {'Content-Type': 'application/json'}
 
+@app.route('/healthz')
+def healthz():
+    data = {
+        'status': 200,
+        'message': 'SUCCESS. Healthz status OK'
+    }
+    return jsonify(data), 200, {'Content-Type': 'application/json'}
+
 if __name__ == '__main__':
     app.run(debug=True)

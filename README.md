@@ -106,7 +106,19 @@
 ![alt text](<screenshots/6/Знімок екрана з 2024-07-24 02-58-30.png>)
 ![alt text](<screenshots/6/Знімок екрана з 2024-07-24 02-59-14.png>)
 
+![alt text](<screenshots/6/Знімок екрана з 2024-07-24 04-52-28.png>)
+![alt text](<screenshots/6/Знімок екрана з 2024-07-24 04-54-52.png>)
+![alt text](<screenshots/6/Знімок екрана з 2024-07-24 04-55-52.png>)
+![alt text](<screenshots/6/Знімок екрана з 2024-07-24 04-56-23.png>)
+![alt text](<screenshots/6/Знімок екрана з 2024-07-24 04-57-28.png>)
+![alt text](<screenshots/6/Знімок екрана з 2024-07-24 04-57-35.png>)
+![alt text](<screenshots/6/Знімок екрана з 2024-07-24 04-58-42.png>)
 
 
-
-
+## RESULT
+![alt text](<screenshots/result/Знімок екрана з 2024-07-24 05-05-11.png>)
+![alt text](<screenshots/result/Знімок екрана з 2024-07-24 05-09-20.png>)
+![alt text](<screenshots/result/Знімок екрана з 2024-07-24 05-04-33.png>)
+![alt text](<screenshots/result/Знімок екрана з 2024-07-24 05-05-49.png>)
+![alt text](<screenshots/result/Знімок екрана з 2024-07-24 05-06-33.png>)
+![alt text](<screenshots/result/Знімок екрана з 2024-07-24 05-08-15.png>)
